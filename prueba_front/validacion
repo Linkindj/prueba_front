@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>Pureba front</title>
+        <link rel="stylesheet" href="static/style.css">
+    </head>
+    <body>
+        <form id="formularioEstudiantes">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required />
+
+            <label for="precio">Precio:</label>
+            <input type="number" id="precio" required />
+
+            <label for="categoria">Categoría:</label>
+            <input type="text" id="categoria" required />
+
+            <button type="submit">Guardar Producto</button>
+        </form>
+
+    <script src="static/script.js"></script>
+    </body>
+</html>

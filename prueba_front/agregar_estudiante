@@ -1,0 +1,18 @@
+import { addDoc, collection } from "firebase/firestore";
+
+
+async function agregarEstudiantes() {
+    try {
+        const estudiantesRef = collection(db, "estudiantes");
+        const docRef = await addDoc(estudiantesRef, {
+            nombre: "julio",
+            edad: 25,
+            curso: "salud ocupacional"
+        });
+        console.log("agregado con ID: ", docRef.id);
+    } catch (e) {
+        console.error("Error al agregar: ", e);
+    }
+}
+
+agregarEstudiantes();
