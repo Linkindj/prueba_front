@@ -1,5 +1,7 @@
-Para la aplicación realizada.
-1- Se ingresa a firebase console iniciando sesión, se crea un proyecto y se realiza la creación de la APP, con el fin de obtener las credenciales para conectar la app con el código fuente.
-2. Se realiza la aplicación con código javaScript en el cual se crea un archivo de configuración con todas las credenciales mostradas desde Firebase.
-3. Se crea una colección desde firebase para realizar la lógica de negocios para interactuar con la base de datos y realizar las validaciones necesarias con el formularios.
-4. Se utiliza JavaScript para genera generar alertas.
+Aplicación Front End con JS y Firebase.
+1- Inicialmente se crea un archivo html "validacion.html" en el cual se creara los formularios para el ingreso y edición de la información, asimismo la tabla donde se listara la información de los cursos de la institución.
+2. Se crea el archivo "index.js", este archivo se enlazará con el archivo HTML para inicializar, para importarlo se hace mediante un <scrip></script> con la ruta y con el tipo modulo para el cargue correcto de la información.
+3. Se crea una proyecto web de firebase, en firebase funcionará como un backend y no entregará el código para tener acceso a las funcionalidades de firebase y se configura la base de datos desde firestore database.
+3. Se crea el archivo "firebase.js", en este archivo se pondran las credenciales entegadas por firebase, se realiza las conexión con la base de datos y donde se importaran las funcionales por ejemplo: getDocs para consulta de colecciones, addDoc para el ingreso de informacion, updateDoc para la actulización de los datos, deleteDoc para eliminar. Al llamar estas funciones desde el archivo "index.js" se llaman los metodos a los cuales se les ingresa los parametros.
+4. En el archivo index.js se realizan los filtros con eventos por input para la busqueda de las variables ingresadas a la base de datos, se llaman funcionalidades de JS para una interfaz más dinamica en el front end, para evitar recargar la página nuevamente, la busqueda al escribir y cambios de apariencia.
+
